@@ -1,4 +1,4 @@
-title: ""
+title: "Title"
 labels: ["question", "needs-triage"]
 body:
   - type: markdown
