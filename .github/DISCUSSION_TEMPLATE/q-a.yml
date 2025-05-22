@@ -1,85 +1,55 @@
-name: "Q&A: Ask for Help"
-description: "Need help with an error, bug, or something confusing? Start here."
-title: "[Q&A] "
-labels: ["question", "needs-triage"]
+title: "[General] "
+labels: ["General Introduction"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## Ask a clear question
-        Please provide as much detail as possible so others can help you effectively.
-
+        This is text that will show up in the template!
   - type: textarea
-    id: problem
+    id: improvements
     attributes:
-      label: What is the problem?
-      description: Describe the behavior you're seeing, what you expected, and why it's an issue.
-      placeholder: |
-        I'm seeing [describe issue] when I try to [action]...
+      label: Top 3 improvements
+      description: "What are the top 3 improvements we could make to this project?"
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
     validations:
       required: true
-
-  - type: textarea
-    id: error
+  - type: markdown
     attributes:
-      label: What is the error? (if any)
-      description: Paste the full error message or stack trace.
-      placeholder: |
-        Example:
-        ```
-        TypeError: Cannot read property 'xyz' of undefined
-            at ViewComponent (/src/views/MyView.vue:42:17)
-        ```
-      render: shell
-
-  - type: textarea
-    id: view-code
+      value: |
+        ## Markdown header
+        And some more markdown
+  - type: input
+    id: has-id
     attributes:
-      label: Code of the view (frontend or template)
-      description: Share the relevant portion of your view or template code.
-      render: javascript
-      placeholder: |
-        ```vue
-        <template>
-          <div>{{ data.value }}</div>
-        </template>
-        <script>
-        export default {
-          // ...
-        }
-        </script>
-        ```
-
-  - type: textarea
-    id: query-code
-    attributes:
-      label: Code of the query (backend or API)
-      description: Share the SQL, backend function, or API logic if relevant.
-      render: python
-      placeholder: |
-        ```python
-        def get_items():
-            return db.query("SELECT * FROM items WHERE id = ?", [id])
-        ```
-
-  - type: textarea
-    id: attempts
-    attributes:
-      label: What have you tried?
-      description: Describe what you've already done to solve the problem.
-      placeholder: |
-        - I searched the documentation
-        - I tried changing the data format
-        - I disabled caching
+      label: Suggestions
+      description: A description about suggestions to help you
     validations:
       required: true
-
-  - type: checkboxes
-    id: checklist
+  - type: dropdown
+    id: download
     attributes:
-      label: Before posting
+      label: Which area of this project could be most improved?
       options:
-        - label: I have searched existing discussions and issues
+        - Documentation
+        - Pull request review time
+        - Bug fix time
+        - Release cadence
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Check that box!
+      options:
+        - label: This one!
           required: true
-        - label: I included all relevant code and error messages
-        - label: This is not a duplicate of another open thread
+        - label: I won't stop you if you check this one, too
+  - type: markdown
+    attributes:
+      value: |
+        ### The thrilling conclusion
+        _to our template_
