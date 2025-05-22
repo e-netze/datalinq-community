@@ -1,55 +1,57 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[Q&A] "
+labels: ["question", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
+        ## Ask a clear question
+        Please provide as much detail as possible so others can help you effectively.
+
   - type: textarea
-    id: improvements
+    id: problem
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
+      label: What is the problem?
+      description: Describe the behavior you're seeing, what you expected, and why it's an issue.
+      placeholder: |
+        I'm seeing [describe issue] when I try to [action]...
     validations:
       required: true
-  - type: markdown
+
+  - type: textarea
+    id: error
     attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
+      label: What is the error? (if any)
+      description: Paste the full error message or stack trace.
+      render: shell
+
+  - type: textarea
+    id: view-code
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Code of the view (frontend or template)
+      description: Share the relevant portion of your view or template code.
+      render: javascript
+
+  - type: textarea
+    id: query-code
+    attributes:
+      label: Code of the query (backend or API)
+      description: Share the SQL, backend function, or API logic if relevant.
+      render: python
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What have you tried?
+      description: Describe what you've already done to solve the problem.
     validations:
       required: true
-  - type: dropdown
-    id: download
-    attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
+
   - type: checkboxes
+    id: checklist
     attributes:
-      label: Check that box!
+      label: Before posting
       options:
-        - label: This one!
+        - label: I have searched existing discussions and issues
           required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+        - label: I included all relevant code and error messages
+        - label: This is not a duplicate of another open thread
