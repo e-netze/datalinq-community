@@ -1,0 +1,85 @@
+name: "Q&A: Ask for Help"
+description: "Need help with an error, bug, or something confusing? Start here."
+title: "[Q&A] "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ask a clear question
+        Please provide as much detail as possible so others can help you effectively.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem?
+      description: Describe the behavior you're seeing, what you expected, and why it's an issue.
+      placeholder: |
+        I'm seeing [describe issue] when I try to [action]...
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: What is the error? (if any)
+      description: Paste the full error message or stack trace.
+      placeholder: |
+        Example:
+        ```
+        TypeError: Cannot read property 'xyz' of undefined
+            at ViewComponent (/src/views/MyView.vue:42:17)
+        ```
+      render: shell
+
+  - type: textarea
+    id: view-code
+    attributes:
+      label: Code of the view (frontend or template)
+      description: Share the relevant portion of your view or template code.
+      render: javascript
+      placeholder: |
+        ```vue
+        <template>
+          <div>{{ data.value }}</div>
+        </template>
+        <script>
+        export default {
+          // ...
+        }
+        </script>
+        ```
+
+  - type: textarea
+    id: query-code
+    attributes:
+      label: Code of the query (backend or API)
+      description: Share the SQL, backend function, or API logic if relevant.
+      render: python
+      placeholder: |
+        ```python
+        def get_items():
+            return db.query("SELECT * FROM items WHERE id = ?", [id])
+        ```
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What have you tried?
+      description: Describe what you've already done to solve the problem.
+      placeholder: |
+        - I searched the documentation
+        - I tried changing the data format
+        - I disabled caching
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before posting
+      options:
+        - label: I have searched existing discussions and issues
+          required: true
+        - label: I included all relevant code and error messages
+        - label: This is not a duplicate of another open thread
