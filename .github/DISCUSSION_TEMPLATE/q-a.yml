@@ -17,6 +17,16 @@ body:
     validations:
       required: true
 
+- type: textarea
+  id: expected-outcome
+  attributes:
+    label: What is the expected outcome?
+    description: Describe what you expected to happen instead of the current behavior.
+    placeholder: |
+      I expected [this outcome] when I [performed this action]...
+  validations:
+    required: true
+
   - type: textarea
     id: error
     attributes:
