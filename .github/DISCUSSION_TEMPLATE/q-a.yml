@@ -1,4 +1,4 @@
-stitle: "[Q&A] "
+title: "[Q&A] "
 labels: ["question", "needs-triage"]
 body:
   - type: markdown
