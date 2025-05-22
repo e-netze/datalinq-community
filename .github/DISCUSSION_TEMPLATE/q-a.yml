@@ -1,4 +1,4 @@
-title: "[Q&A] "
+stitle: "[Q&A] "
 labels: ["question", "needs-triage"]
 body:
   - type: markdown
@@ -20,22 +20,22 @@ body:
   - type: textarea
     id: error
     attributes:
-      label: What is the error? (if any)
+      label: What is the error message?
       description: Paste the full error message or stack trace.
       render: shell
 
   - type: textarea
     id: view-code
     attributes:
-      label: Code of the view (frontend or template)
+      label: Code of the view 
       description: Share the relevant portion of your view or template code.
       render: javascript
 
   - type: textarea
     id: query-code
     attributes:
-      label: Code of the query (backend or API)
-      description: Share the SQL, backend function, or API logic if relevant.
+      label: Code of the query
+      description: Share the relevant portion of your query code.
       render: python
 
   - type: textarea
@@ -54,4 +54,6 @@ body:
         - label: I have searched existing discussions and issues
           required: true
         - label: I included all relevant code and error messages
+          required: true
         - label: This is not a duplicate of another open thread
+          required: true
