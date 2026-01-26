@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Frage stellen / Hilfe & How-to
+    url: https://github.com/e-netze/datalinq-community/discussions/new?category=q-a
+    about: Fragen zu Code-Beispielen, SQL-Queries oder allgemeine Hilfe? Bitte hier stellen.
+  - name: 🐞 Fehler melden (Bug Report)
+    url: https://github.com/e-netze/datalinq-community/issues/new?template=bug-report.yml
+    about: Etwas in DataLinq funktioniert nicht oder stürzt ab.
+  - name: 💡 Feature vorschlagen / Neue Funktion
+    url: https://github.com/e-netze/datalinq-community/issues/new?template=feature-request.yml
+    about: Idee für eine neue Funktion, einen neuen Razor-Helper oder Verbesserungen am Editor.
