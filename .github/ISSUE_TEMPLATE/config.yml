@@ -1,11 +1,13 @@
 blank_issues_enabled: false
 contact_links:
+  - name: 📚 Dokumentation DataLinq
+    url: https://docs.webgiscloud.com/de/datalinq/index.html
+    about: Bitte prüfen Sie zuerst die Dokumentation, ob Ihre Frage dort bereits beantwortet wird.
+
+  - name: 📚 Dokumentation WebGIS-(DataLinq)
+    url: https://docs.webgiscloud.com/de/webgis/config/api/index.html#datalinq
+    about: Bitte prüfen Sie zuerst die Dokumentation, ob Ihre Frage dort bereits beantwortet wird.
+
   - name: 💬 Frage stellen / Hilfe & How-to
-    url: https://github.com/e-netze/datalinq-community/discussions/new?category=q-a
+    url: https://github.com/e-netze/datalinq-community/discussions
     about: Fragen zu Code-Beispielen, SQL-Queries oder allgemeine Hilfe? Bitte hier stellen.
-  - name: 🐞 Fehler melden (Bug Report)
-    url: https://github.com/e-netze/datalinq-community/issues/new?template=bug-report.yml
-    about: Etwas in DataLinq funktioniert nicht oder stürzt ab.
-  - name: 💡 Feature vorschlagen / Neue Funktion
-    url: https://github.com/e-netze/datalinq-community/issues/new?template=feature-request.yml
-    about: Idee für eine neue Funktion, einen neuen Razor-Helper oder Verbesserungen am Editor.
