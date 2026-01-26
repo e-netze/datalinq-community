@@ -18,6 +18,7 @@ body:
         - DataLinq Helper Funktionen
         - Connection Manager / Datenquellen
         - Externe JavaScript Libraries
+        - Andere
     validations:
       required: true
   - type: input
