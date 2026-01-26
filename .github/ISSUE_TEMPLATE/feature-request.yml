@@ -2,6 +2,9 @@ name: 💡 Feature-Wunsch
 description: Schlagen Sie eine neue Funktion oder einen DataLinq-Helper vor
 title: "[Feature]: "
 labels: ["enhancement", "triage"]
+assignees:
+  - ZamohtM
+  - gis-eni
 body:
   - type: dropdown
     id: type
