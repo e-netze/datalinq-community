@@ -1,4 +1,4 @@
-name: Fehlermeldung (Bug Report)
+name: 🐞 Fehler melden (Bug Report)
 description: Erstellen Sie einen Bericht, um DataLinq zu verbessern
 title: "[Bug]: "
 labels: ["bug", "triage"]
