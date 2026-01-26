@@ -1,7 +1,8 @@
 name: 🐞 Fehler melden (Bug Report)
 description: Erstellen Sie einen Bericht, um DataLinq zu verbessern
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["Status: Prüfung ausstehend"]
+type: bug
 assignees:
   - ZamohtM
   - gis-eni
