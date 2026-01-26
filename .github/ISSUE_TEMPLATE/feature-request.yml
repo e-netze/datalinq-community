@@ -1,0 +1,41 @@
+name: Feature-Wunsch
+description: Schlagen Sie eine neue Funktion oder einen DataLinq-Helper vor
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Um welche Art von Feature handelt es sich?
+      options:
+        - Neuer DataLinq-Helper
+        - Editor UI Verbesserung
+        - Neue Datenquelle / Verbindung
+        - API / Backend Feature
+        - Sonstiges
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Bezieht sich der Wunsch auf ein aktuelles Problem?
+      description: Bitte beschreiben Sie das Problem, das Sie lösen möchten.
+      placeholder: Ich bin frustriert, wenn ich versuche Tausenderpunkte-Characters in DLH.Chart zu ändern ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Beschreiben Sie die gewünschte Lösung
+      description: |
+        Beschreiben Sie die Lösung klar. 
+        Falls Sie einen neuen DataLinq-Helper vorschlagen, wie sollte die Syntax aussehen?
+      placeholder: |
+        Ich hätte gerne einen Helper wie: @DLH.FormatCurrency(value, "EUR")
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Weitere Informationen, Screenshots oder Code-Beispiele zum Feature-Wunsch.
