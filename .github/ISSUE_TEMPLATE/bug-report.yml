@@ -1,0 +1,64 @@
+name: Fehlermeldung (Bug Report)
+description: Erstellen Sie einen Bericht, um DataLinq zu verbessern
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ⚠️ Bevor Sie beginnen
+        Bitte prüfen Sie die [DataLinq-Dokumentation](https://docs.webgiscloud.com/de/datalinq/index.html) & [WebGIS-Dokumentation](https://docs.webgiscloud.com/de/webgis/config/api/index.html#datalinq) und existierende Issues/Diskussionen, um sicherzustellen, dass dieser Fehler noch nicht gemeldet wurde.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Welche Komponente ist betroffen?
+      options:
+        - DataLinq Code (Editor)
+        - DataLinq API (Bereitstellung der Views)
+        - DataLinq Helper Funktionen
+        - Connection Manager / Datenquellen
+        - Externe JavaScript Libraries
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: WebGIS/DataLinq Version
+      description: Welche Version verwenden Sie? (z.B. v2.1.0)
+      placeholder: v.X.X.X
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Fehlerbeschreibung
+      description: Eine klare und prägnante Beschreibung des Fehlers.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Schritte zum Reproduzieren / Code
+      description: |
+        Bitte beschreiben Sie die Schritte, die zum Fehler führen.
+        WICHTIG: Wenn es eine View oder Query betrifft, fügen Sie bitte den relevanten SQL- oder Razor-Code hier ein.
+      placeholder: |
+        1. Neuen Endpoint mit Database-Verbindung erstellt
+        2. Folgende Query geschrieben: SELECT * FROM ...
+        3. In der Razor View folgende Funktion aufgerufen: @DLH.Table(...)
+        4. Fehler erhalten: "NullReferenceException..."
+      render: csharp
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hätten Sie stattdessen erwartet?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Fehler-Logs oder Screenshots
+      description: Fügen Sie hier Stack Traces oder Screenshots ein.
