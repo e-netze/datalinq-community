@@ -1,0 +1,32 @@
+name: ❓ Frage / Support
+description: Stellen Sie eine Frage zur Implementierung oder Nutzung
+title: "[Frage]: "
+labels: ["Typ: Frage", "Status: Prüfung ausstehend"]
+assignees:
+  - ZamohtM
+  - gis-eni
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 👋 Support Ticket
+        Bitte geben Sie uns genug Infos, um zu helfen.
+  - type: textarea
+    id: question
+    attributes:
+      label: Ihre Frage
+      description: Was möchten Sie erreichen?
+      placeholder: "Wie kann ich in DataLinq eine Verbindung zu X herstellen..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Kontext / Code
+      description: Haben Sie schon etwas probiert? (Code-Schnipsel helfen enorm!)
+      render: csharp
+  - type: input
+    id: version
+    attributes:
+      label: Version (Optional)
+      description: Falls relevant, welche Version nutzen Sie?
