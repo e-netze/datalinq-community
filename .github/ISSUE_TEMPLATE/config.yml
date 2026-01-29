@@ -8,6 +8,6 @@ contact_links:
     url: https://docs.webgiscloud.com/de/webgis/config/api/index.html#datalinq
     about: Bitte prüfen Sie zuerst die Dokumentation, ob Ihre Frage dort bereits beantwortet wird.
 
-  - name: 💬 Frage stellen / Hilfe & How-to
+  - name: 💬 Community / Hilfe & How-to
     url: https://github.com/e-netze/datalinq-community/discussions
     about: Fragen zu Code-Beispielen, SQL-Queries oder allgemeine Hilfe? Bitte hier stellen.
