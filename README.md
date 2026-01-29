@@ -10,6 +10,7 @@ Wir haben unseren Support-Prozess strukturiert, um Ihnen schneller und effektive
 **Wann nutzen?**
 *   Sie haben einen **bestätigten Bug** gefunden (und können Schritte zum Reproduzieren nennen).
 *   Sie haben einen konkreten **Feature-Wunsch** (z.B. eine spezifische fehlende Razor-Helper-Methode).
+*   Sie haben eine allgemeine/offene **Frage** welche nicht von der Community (GitHub Discussions) beantwortet werden kann.
 
 *Hinweis: Wir verwenden strikte Vorlagen für Issues. Bitte füllen Sie alle angeforderten Felder (Version, Code-Beispiele) aus, damit wir das Problem schnell bearbeiten können.*
 
