@@ -2,7 +2,7 @@ name: ❓ Frage / Support
 description: Stellen Sie eine Frage zur Implementierung oder Nutzung
 title: "[Frage]: "
 labels: ["Frage", "Status: Prüfung ausstehend"]
-type: task
+type: question
 assignees:
   - ZamohtM
   - gis-eni
